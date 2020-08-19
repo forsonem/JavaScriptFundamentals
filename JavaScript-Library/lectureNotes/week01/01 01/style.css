@@ -8,7 +8,7 @@ html{
     background: linear-gradient(180deg, rgba(235, 217, 181, 1) 0%, rgba(236, 105, 165, 1) 50%, rgba(89, 232, 247, 1)100%);
 }
 body{
-    width:100vw;
+    width:80vw;
     margin: 0 auto;
     height: 100vh;
 }
@@ -60,12 +60,12 @@ nav li{
     font-size: 2rem;
     text-transform: uppercase;
 }
-/* .artist img{
-    height: 100px;
-    width: 100px;
-    margin: auto auto;
+.artist img{
+    height: 130px;
+    width: 135px;
+    margin: 1px 1px .5px .5px;
     
-} */
+} 
 /* MAIN----------------------------------------------------- */
 main{
     display: flex;
@@ -85,7 +85,8 @@ aside a{
     width: 50%;
 }
 aside img{
-    max-width: 100%;
+    
+    max-width:100%;
 }
 footer{
     margin-top: 10px;
