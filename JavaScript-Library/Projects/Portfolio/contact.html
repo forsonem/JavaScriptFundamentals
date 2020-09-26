@@ -40,64 +40,49 @@
           </ul>
         </div>
       </nav>
-      
-      <div class="homeHeader">
-          <div class="container">
-              <div class="slide slide1"><h1></h1></div>
-              <div class="slide slide2" id="slide"><h1></h1></div>
-          </div>
-      </div>
-      <section class="recentProjectsSection">
-        <div class="project-heading"><p><hr>SOME OF MY RECENT PROJECTS<hr></p></div>
-        <div class="recentProjects">
-            <div class="rec-proj1-container"  onmouseover="fade(event)" onmouseout="fadein(event)">
-                <div class="rec-proj1">project 1</div>
-                <div class="rec-proj-title">
-                    <div class="title"><p>Sneaker Trader</p></div>
-                    <div><ion-icon name="chevron-forward-outline"></ion-icon></div>
-                </div>
-            </div>
-            <div class="rec-proj2-container"  onmouseover="fade(event)" onmouseout="fadein(event)">
-                <div class="rec-proj1">project 1</div>
-                <div class="rec-proj-title">
-                    <div class="title"><p>The Reserve</p></div>
-                    <div><ion-icon name="chevron-forward-outline"></ion-icon></div>
-                </div>
-            </div>
-            <div class="rec-proj3-container"  onmouseover="fade(event)" onmouseout="fadein(event)">
-                <div class="rec-proj1">project 1</div>
-                <div class="rec-proj-title">
-                    <div class="title"><p>Tech Social</p></div>
-                    <div><ion-icon name="chevron-forward-outline"></ion-icon></div>
-                </div>
-            </div>
+    <div class="form-container">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/forsonem@gmail.com" method="post" target="blank">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+      <footer>
+        <div class="foot-sect">
+          <p>© 2020 Erick Forson</p>
         </div>
-    </section>
-    <footer>
-      <div class="foot-sect">
-        <p>© 2020 Erick Forson</p>
-      </div>
-      <div class="foot-sect">
-        <ul>
-          <li><a class="low-links" href="../Portfolio/about.html">about</a></li>
-          <li><a class="low-links" href="../Portfolio/projects.html">portfolio</a></li>
-          <input type="text" value="forsonem@gmail.com" class="email">
-          <li><a class="low-links" href="">vblog</a></li>
-          <li><a class="low-links" href="">contact</a></li>
-        </ul>
-      </div>
-      <div class="foot-sect">
-        <ul>
-          <li class="hello"><ion-icon name="mail" ></ion-icon><span class="tooltiptext">email to clipboard</span></li>
-          <li><a href="https://www.linkedin.com/in/erickforson/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <li><a href="https://github.com/forsonem" target="blank"><ion-icon name="logo-github"></ion-icon></a></li>
-          <li class="hello"><a href="../Portfolio/Assets/Erick Forson Resume 2020.docx" download="Erick Resume"><ion-icon name="document-text"></ion-icon><span class="tooltiptext">Download Resume</span></a></li>
-        </ul>
-      </div>
-    </footer>
+        <div class="foot-sect">
+          <ul>
+            <li><a class="low-links" href="../Portfolio/about.html">about</a></li>
+            <li><a class="low-links" href="../Portfolio/projects.html">portfolio</a></li>
+            <input type="text" value="forsonem@gmail.com" class="email">
+            <li><a class="low-links" href="">vblog</a></li>
+            <li><a class="low-links" href="">contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-sect">
+          <ul>
+            <li class="hello"><ion-icon name="mail" ></ion-icon><span class="tooltiptext">email to clipboard</span></li>
+            <li><a href="https://www.linkedin.com/in/erickforson/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/forsonem" target="blank"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li class="hello"><a href="../Portfolio/Assets/Erick Forson Resume 2020.docx" download="Erick Resume"><ion-icon name="document-text"></ion-icon><span class="tooltiptext">Download Resume</span></a></li>
+          </ul>
+        </div>
+      </footer>
+    
 </body>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </html>
+
+

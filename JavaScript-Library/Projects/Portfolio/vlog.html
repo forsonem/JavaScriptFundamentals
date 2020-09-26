@@ -40,52 +40,72 @@
       </ul>
     </div>
   </nav>
-      <div class="about-sect1">
-          <div class="about-sect1-left">
-              <div><h1 class="about-header">about me</h1></div><br>
-              <div><p class="about-intro">I'm a product designer/ software developer based in Indianapoli IN.</p></div><br>
-              <div><p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me cooking, gardening or working out in the park.</p></div><br>
-              <div class="about-social">
-                  <div><ion-icon name="logo-linkedin"></ion-icon></div>
-                  <div><ion-icon name="logo-github"></ion-icon></div>
-                  <div><ion-icon name="mail"></ion-icon></div>
-              </div>
-          </div>
-          <div class="about-sect1-right">
-            <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-          </div>
-      </div>
-      <div class="about-sect2">
 
+    <section class="projects">
+        <div class="flip-container">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 1</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 2</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 3</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 4</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+        <div class="flip-container">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 5</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+        <div class="flip-container" id="last-flip">
+            <div class="flip-card" onclick="flip(event)">
+                <div class= "flip-card-front"><h1>Project 6</h1></div>
+                <div class= "flip-card-back">Project Detail</div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+      <div class="foot-sect">
+        <p>© 2020 Erick Forson</p>
       </div>
-      
-      
-      <footer>
-        <div class="foot-sect">
-          <p>© 2020 Erick Forson</p>
-        </div>
-        <div class="foot-sect">
-          <ul>
-            <li><a class="low-links" href="../Portfolio/about.html">about</a></li>
-            <li><a class="low-links" href="../Portfolio/projects.html">portfolio</a></li>
-            <input type="text" value="forsonem@gmail.com" class="email">
-            <li><a class="low-links" href="">vblog</a></li>
-            <li><a class="low-links" href="">contact</a></li>
-          </ul>
-        </div>
-        <div class="foot-sect">
-          <ul>
-            <li class="hello"><ion-icon name="mail" ></ion-icon><span class="tooltiptext">email to clipboard</span></li>
-            <li><a href="https://www.linkedin.com/in/erickforson/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="https://github.com/forsonem" target="blank"><ion-icon name="logo-github"></ion-icon></a></li>
-            <li class="hello"><a href="../Portfolio/Assets/Erick Forson Resume 2020.docx" download="Erick Resume"><ion-icon name="document-text"></ion-icon><span class="tooltiptext">Download Resume</span></a></li>
-          </ul>
-        </div>
-      </footer>
+      <div class="foot-sect">
+        <ul>
+          <li><a class="low-links" href="../Portfolio/about.html">about</a></li>
+          <li><a class="low-links" href="../Portfolio/projects.html">portfolio</a></li>
+          <input type="text" value="forsonem@gmail.com" class="email">
+          <li><a class="low-links" href="">vblog</a></li>
+          <li><a class="low-links" href="">contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-sect">
+        <ul>
+          <li class="hello"><ion-icon name="mail" ></ion-icon><span class="tooltiptext">email to clipboard</span></li>
+          <li><a href="https://www.linkedin.com/in/erickforson/" target="blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://github.com/forsonem" target="blank"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li class="hello"><a href="../Portfolio/Assets/Erick Forson Resume 2020.docx" download="Erick Resume"><ion-icon name="document-text"></ion-icon><span class="tooltiptext">Download Resume</span></a></li>
+        </ul>
+      </div>
+    </footer>
 </body>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 <script src="index.js"></script>
 </html>
