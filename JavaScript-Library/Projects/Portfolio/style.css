@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------------------------------- */
+/* Home----------------------------------------------------------------> */
+/* --------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------NAVBAR-------------------------------------------- */
+.navigation{
+    margin:0;
+    height:12vh;
+    padding-left:13%;
+    padding-right:0%;
+    display:flex;
+    text-align:center;
+    background-color: rgb(22, 21, 21);
+}
+.navbar-collapse{
+    position:absolute;
+    right:30%;
+    display:inline-block;
+    width:300px;
+    font-size: 1.2rem;
+}
+.navbar-brand{
+    color:white;
+    transition: color .5s ;
+    -webkit-transition: color .5s ;
+    -moz-transition: color .5s ;
+    -ms-transition: color .5s ;
+    -o-transition: color .5s ;
+}
+.navbar-brand:hover{
+    color:rgb(187, 184, 184);
+    font-size: xx-large;
+    
+}
+.nav-link{
+    color: white;
+    margin-left:.5vw;
+    margin-right:.5vw;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+
+}
+.navbar ion-icon {
+    height:30px;
+    width: 30px;
+    color: white;
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+.nav-link:hover {
+   color:rgb(126, 123, 123);
+}
+.nav-link:hover ion-icon {
+   color:rgb(126, 123, 123);
+}
+/*
+---------------------------------------------LandingPage----------------------------------- */
+.homeHeader{
+    height:80vh;
+    width:100%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    margin-top:0;
+    margin-bottom:.1%;
+    padding: 0;
+    box-shadow: 0px 0px 5px 5px rgb(226, 218, 218); 
+}
+
+
+.home-links{
+    color: white;
+    font-family:"Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 3rem;
+    
+}
+.home-links:hover{
+    color: grey;
+    text-decoration:none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height:80vh;
+    margin:0;
+    overflow: hidden;
+}
+.container h1{
+   color: white;
+   display: block;
+}
+.container .slide{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+
+}
+.container .slide.slide1{
+    background: url(https://images.unsplash.com/photo-1574873347196-ddd0560bc1f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    
+    
+}
+.container .slide.slide2{
+    background: url(https://images.unsplash.com/photo-1581404522557-42260b4cde43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    left:50%;
+    
+}
+.container .slide h1{
+    size: 120%    
+}
+
+
+.recentProjectsSection{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    justify-content: center;
+    padding-left:10%;
+    padding-right: 10%;
+    margin-bottom:.3%;
+    /* box-shadow: 5px 5px rgb(240, 235, 235); */
+}
+
+.project-heading{
+    text-align: center;
+}
+.recentProjects{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.rec-proj1-container, .rec-proj2-container, .rec-proj3-container {
+    height:100%;
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 0;
+    box-shadow:2px 2px 2px 2px rgb(235, 225, 225);
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    
+}
+.rec-proj1, .rec-proj2, .rec-proj3{
+    display:flex;
+    align-items: center;
+    width:100%;
+    height:78%;
+    justify-content:center;
+    background-color:rgb(145, 134, 134);
+    color:white;
+    border-top:solid 10px white;
+    border-left:solid 10px white;
+    border-right:solid 10px white;
+    position:relative;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+.rec-proj-title{
+    height:22%;
+    width:100%;
+    background-color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.rec-proj-title title{
+    display:flex;
+    position:relative;
+    right:30%;
+    top:10%;
+    align-content: center; 
+    margin-bottom:0;
+    
+}
+.rec-proj-title p{
+    font-size:1.1rem;
+    margin-bottom:0;
+    
+}
+.rec-proj-title ion-icon{
+    position:relative;
+    left:30px;
+    top:8px;
+    font-size:3rem;
+    color:lightgrey;
+    margin:0;
+    opacity:0;
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    position:relative;
+    
+}
+/* ------------------------------------------------------------------------- */
+/* About---------------------------------------------------------------> */
+/* ------------------------------------------------------------------------------- */
+.about-sect1{
+    /* border:solid; */
+    display: flex;
+    width: 100%;
+    margin:auto auto;
+    display: flex;
+    flex-direction: row;
+    padding:5%;
+    height:88vh;
+    border-bottom: solid .5px;
+    padding-left:7.5%;
+    padding-right:7.5%;
+}
+.about-header{
+    margin-bottom: 0.1em;
+    font-size: 48px;
+    font-size: 4.8rem;
+    line-height: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    letter-spacing: -0.07em;
+}
+.about-intro{
+    line-height: 1.3em;
+    margin-bottom: 0.7em;
+    clear: both;
+}
+.about-sect1 p{ 
+    /* border:solid; */
+    line-height:1.6em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+.about-sect1-left, .about-sect1-right{
+    width:45%;
+    /* border:solid; */
+    height:85%;
+    /* text-align: center; */
+    display:block;
+    padding:1%;
+    margin-bottom: 1%;
+    margin:auto auto;
+
+
+}
+.about-sect1-right img{
+    height:100%;
+    width:100%;
+
+
+}
+
+.about-social{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+}
+.about-social ion-icon{
+    height:45px;
+    width:45px;
+}
+.about-social div:nth-child(1):hover{
+    color:darkblue;
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+}
+.about-social div:nth-child(2):hover{
+    color:silver;
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+}
+.about-social div:nth-child(3):hover{
+    color:darkred;
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+}
+.about-sect2{
+    /* border:solid; */
+    display: flex;
+    width: 100%;
+    margin:auto auto;
+    display: flex;
+    flex-direction: row;
+    padding:5%;
+    height:88vh;
+    border-top: solid .5px;
+    background-color: rgb(246, 240, 240);
+    padding-left:7.5%;
+    padding-right:7.5%;
+}
+/* Project-------------------------------------------------------------> */
+.projects{
+    height:200vh;
+    width:70vw;
+    position: relative;
+    top: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto;
+    margin-bottom: 0%;
+    
+    /* position: fixed; */
+    /* border: black solid 1px; */
+
+}
+.flip-container{
+    height: 12.5%;
+    width: 90%;
+    /* border: black solid 1px; */
+    perspective: 1000px;
+    
+}
+.flip-card{
+    height:100%;
+    width: 100%;
+    text-align:center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    /* position: fixed; */
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    font-size: 3rem;
+    height:100%;
+    width: 100%;
+    /* border:solid black .2px; */
+  }
+.flip-card-front{
+    color:black;
+    background-color: white;
+    border: solid 0.5px;
+    
+}
+.flip-card-front:hover {
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 20px 1px rgb(223, 35, 35);
+}
+
+.flip-card-back{
+    color:black;
+    /* border: 2px solid black; */
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    background-color: white;
+    border: solid 0.5px;
+}
+.flip-card-back:hover{
+    bottom: 2px;
+    right: 2px;
+    box-shadow: 0px 0px 20px 1px #000;
+}
+#last-flip{
+    margin-bottom:7%;
+}
+/* -------------------------------------------------------------------------- */
+/* footer------------------------------------------------------------>  */
+/* ----------------------------------------------------------------------------------- */
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(243, 229, 229);
+    /* margin-top:5%; */
+    /* border: solid; */
+    width:100%;
+    color: black;
+    margin: 0;
+    /* position:absolute; */
+    /* margin-top:7%; */
+
+}
+.foot-sect{
+    color: black;
+    /* border:black solid; */
+    width: 25%;
+    height:90%;
+    justify-content:center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 1% 1% 1% 1%;
+    
+
+}
+.foot-sect p{
+    position: relative;
+    top: 10px;
+}
+.foot-sect ul{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin: auto auto;
+    position: relative;
+    top: 10px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0 6% 0 6%;
+    
+}
+.foot-sect ul:hover{
+    list-style: none;
+}
+
+
+.foot-sect ul li{
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    color: black;
+    margin:0;
+}
+
+.foot-sect ul li:hover{
+    
+    color: grey;
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+    
+}
+.foot-sect ul li ion-icon{
+    
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    color:black;
+}
+.foot-sect ul li ion-icon:hover{
+    color: rgb(173, 168, 168);
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+}
+
+.low-links{
+    color:black;
+    /* margin:auto auto; */
+    /* border:solid; */
+}
+.low-links:hover{
+    text-decoration:none;
+    color: rgb(155, 150, 150);
+    transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -ms-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+}
+.hello {
+    position: relative;
+    display: inline-block;
+    
+}
+.hello .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: black;
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    font-size: .8rem;
+}
+  
+.hello:hover .tooltiptext{
+    visibility: visible;
+}
+.email{
+    visibility: hidden;
+    height:.01px;
+    width:.01px;
+}
+
+
+
+
+/* .rec-proj-title:hover ion-icon{
+    opacity:1;
+    transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    position:relative;
+  
+} */
+
+
+
